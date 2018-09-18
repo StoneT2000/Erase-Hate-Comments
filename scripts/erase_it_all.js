@@ -55,7 +55,7 @@ function draw() {
 function generate_comments(ctx) {
   ctx.noStroke();
   for (var i = 0; i < 10; i++) {
-    ctx.textSize(random(20,50));
+    ctx.textSize(random(10,40));
     var randomWord = hate_comments[floor(random(0,hate_comments.length))];
     ctx.text(randomWord, random(10, cWidth-100), random(10,cHeight-100));
   }
@@ -66,4 +66,4 @@ function windowResized() {
   cursorcanvas = createGraphics(cWidth, cHeight)
 }
 
-var hate_comments = ['Your content sucks', 'Go away', 'Get a life', 'You suck', 'Hater was here', 'You got played', 'Go somewhere else', 'Trash', 'Peasant', 'Bully', 'Muppet', 'Muggle', 'Haters gonna hate', 'Stop trying', 'Get out', 'Disappointment', 'Try harder', '>:(', 'What a mess', 'Pleb', 'Junk', 'Worthless', 'You are nothing', 'Personality thinner than paper', 'Character weaker than my old man', 'Stop.', '...', 'What the hell is this', 'When will you learn', 'Try something else', 'jeez', 'get gud mate', 'u trash', '']
+var hate_comments = ['Your content sucks', 'Go away', 'Get a life', 'You suck', 'Hater was here', 'You got played', 'Go somewhere else', 'Trash', 'Peasant', 'Bully', 'Muppet', 'Muggle', 'Haters gonna hate', 'Stop trying', 'Get out', 'Disappointment', 'Try harder', '>:(', 'What a mess', 'Pleb', 'Junk', 'Worthless', 'You are nothing', 'Personality thinner than paper', 'Character weaker than my old man', 'Stop.', '...', 'What the hell is this', 'When will you learn', 'Try something else', 'jeez', 'get gud mate', 'u trash', '💩']
