@@ -8,6 +8,7 @@ var bgcolor = "rgb(250,250,250)";
 
 function setup() {
   ccanvas = createCanvas(cWidth, cHeight);
+  cursor('images/icons8-erase-80.png')
   ccanvas.parent('ccanvas');
   
   //Create commentscanvas, where all text is put up
@@ -25,9 +26,9 @@ function draw() {
   image(commentscanvas, 0, 0)
   noFill();
   stroke(1);
-  ellipse(mouseX, mouseY, 30, 30)
+  //ellipse(mouseX+16, mouseY+16, 30, 30)
   if (mouseIsPressed) {
-    erase_point[pos] = [mouseX,mouseY]
+    erase_point[pos] = [mouseX+12,mouseY+58]
     if (pos == 1) {
       pos = 0;
     }
@@ -36,11 +37,11 @@ function draw() {
     }
     //Erase in line between two points?
     commentscanvas.stroke(bgcolor);
-    commentscanvas.strokeWeight(30)
+    commentscanvas.strokeWeight(40)
     commentscanvas.line(erase_point[0][0],erase_point[0][1],erase_point[1][0],erase_point[1][1])
   }
   else {
-    erase_point[pos] = [mouseX,mouseY]
+    erase_point[pos] = [mouseX+12,mouseY+58]
     if (pos == 1) {
       pos = 0;
     }
