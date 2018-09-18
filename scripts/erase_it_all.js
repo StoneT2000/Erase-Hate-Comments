@@ -6,7 +6,7 @@ var commentscanvas;
 var bgcolor = "rgb(250,250,250)";
 var cursorImg;
 function preload() {
-  cursorImg = loadImage('../images/icons8-erase-80.png');
+  cursorImg = loadImage('images/icons8-erase-32.png');
 }
 function setup() {
   ccanvas = createCanvas(cWidth, cHeight);
